@@ -1,10 +1,15 @@
+
+###
+timedatectl set-timezone America/Toronto
+
+
+
 #### Linux backup
-tar cfz backup-$(date +%Y-%m-%d).tar.gz ...
 
 --> Create a tar.gz archive from the /user directory.
-tar -czf /tmp/backup-$(date +%Y-%m-%d).tar.gz /data
+tar -czf /backup/data-$(date +%Y-%m-%d).tar.gz /data
 
 
-tar -tvf archive_name.tar        ### Extract a tar archive.
-tar -xzvf archive.name.tar.gz    ### Extract a tar gzip archive.
+tar -tvf name.tar        ### Extract a tar archive.
+tar -xzvf name.tar.gz    ### Extract a tar gzip archive.
 
