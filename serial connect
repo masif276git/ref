@@ -1,0 +1,13 @@
+FInd out serial port
+dmesg | grep ttyS
+
+
+Configure the baud rate and character format of the PC or terminal to match these console port default characteristics:
+• 9600 baud
+• 8 data bits 
+• 1 stop bit 
+• No parity
+
+Connect to router:
+screen /dev/ttyS0 9600
+
