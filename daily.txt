@@ -1,1 +1,27 @@
-Testing
+
+
+grafana password: admin \ foobar
+
+
+curl whoami.mydomain.local
+
+docker service ps traefik  --no-trunc
+docker inspect <task_id> | less
+docker logs <container_id>
+
+docker stack deploy -c docker-compose.yml traefik
+
+
+
+#### Set journald as the default logging driver
+
+sudo nano /etc/docker/daemon.json  -> add below content
+
+{
+  "log-driver": "journald"
+}
+
+sudo systemctl restart docker
+
+docker info | grep 'Logging Driver'
+
